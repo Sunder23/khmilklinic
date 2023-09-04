@@ -1,0 +1,178 @@
+.popup_appointment {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.2);
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.popup_appointment.active {
+    display: flex;
+}
+
+.popup_appointment_wrapper {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light);
+}
+.popup_appointment_close_btn {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F19FC3;
+    z-index: 40;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup_appointment_close_btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-pink);
+}
+.popup_appointment_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 50%;
+}
+.popup_appointment_left{
+    width: 100%;
+}
+.popup_appointment_right{
+    height: 100%;
+    display: flex;
+	position: absolute;
+    right: 0;
+	width: 50%;
+}
+.popup_appointment_left_wrapper{
+    padding: 35px 40px;
+}
+.popup_appointment_right img{
+	object-fit: cover;
+}
+.popup_appointment_inner_title{
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--colot-titles);
+}
+.popup_appointment_left_wrapper .section_form_btn{
+    border: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;	
+}
+
+.popup_appointment_inner_form input:not([type='submit']) {
+	margin-top: 0 !important;
+    display: flex !important;
+    width: 100% !important;
+    padding: 0 15px 15px 0;
+    border: 0;
+    border-bottom: 1px solid #282828 !important;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+.popup_appointment_inner_form input::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+.popup_appointment_inner_form>span{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+}
+.popup_appointment_inner_form>span:not(:last-child){
+	margin-bottom: 25px;	
+}
+.popup_appointment_inner_form .wpcf7-form-control-wrap{
+	display: flex;
+    width: 100%;
+}
+.popup_appointment_success{
+	display: none;
+}
+
+.popup_appointment_success_wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--color-titles);
+    background: #fff;	
+}
+.popup_appointment_success_btn{
+	margin-top: 30px;
+}
+@media screen and (max-width:979.98px) {
+    .popup_appointment_wrapper{
+        width: 95%;
+    }
+	.popup_appointment_inner_form input:not([type='submit']){
+		font-size: 16px;
+	line-height: 18px;
+	}
+}
+
+@media screen and (max-width:764.98px){
+	.popup_appointment_success_wrapper{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 130%;
+	}
+	.popup_appointment_success_btn{
+		margin-top: 20px;
+	}
+	.popup_appointment_inner{
+		width: 100%;
+	}
+    .popup_appointment_left{
+        width: 100%;
+    }
+	.popup_appointment_right{
+		display: none;
+	}
+	.popup_appointment_left_wrapper .section_form_btn{
+		padding: 10px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.popup_appointment_left_wrapper{
+		padding: 30px 15px;
+	}
+	.popup_appointment_close_btn{
+		width: 30px;
+		height: 30px;
+	}
+}

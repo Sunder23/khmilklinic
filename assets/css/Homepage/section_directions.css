@@ -1,0 +1,122 @@
+section.section_directions{
+    overflow: hidden;
+}
+.section_directions_title {
+    margin-bottom: 40px;
+}
+
+.section_directions_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.section_directions_item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 100%;
+}
+
+.section_directions_item_img {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.section_directions_item_step {
+    display: inline-flex;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-light);
+    background: rgba(121, 184, 51, 0.7);
+    width: max-content;
+}
+
+.section_directions_item_title {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-titles);
+}
+
+.section_directions_item_link {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--color-text);
+}
+
+.section_directions_item_link a {
+    color: var(--color-pink);
+    text-decoration: underline;
+}
+
+.section_directions_items_mibile {
+    display: none;
+}
+
+@media screen and (max-width:979.98px) {
+    .section_directions_items {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .section_directions_item {
+        max-width: 300px;
+    }
+
+    .section_directions_item_img {
+        margin-bottom: 15px;
+    }
+
+    .section_directions_item_step {
+        margin-bottom: 15px;
+    }
+
+    .section_directions_item_title {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .section_directions_item_link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:764.98px) {
+    .section_directions_title.title_h2 {
+        margin-bottom: 30px;
+    }
+
+    .section_directions_items {
+        display: none;
+    }
+
+    .section_directions_items_mibile {
+        margin-right: -15px;
+        display: block;
+    }
+
+    .section_directions_items_mibile .swiper-slide {
+        width: 265px;
+    }
+
+    .section_directions_item_title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .section_directions_item_link {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

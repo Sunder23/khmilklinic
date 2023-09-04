@@ -1,0 +1,228 @@
+/* Centers Hero  */
+
+.centers_hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.centers_hero__seatch {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.centers_hero__form {
+    display: flex;
+}
+
+.centers_hero__input {
+    width: 70%;
+    height: 80px;
+    padding: 10px 34px;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-text);
+    outline: none;
+    border: 1px solid var(--color-pink);
+}
+
+.centers_hero__input::placeholder {
+    color: #969696;
+}
+
+.centers_hero__title {
+    max-width: 410px;
+}
+
+.centers_hero__btn.btn_pink {
+    width: 30%;
+    height: 80px;
+    padding: 10px 34px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    justify-content: center;
+}
+
+.centers_hero__btn {
+    display: none;
+}
+
+/* Centers Hero  END */
+
+/* Centers Content */
+.centers_content__wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.centers_content__left {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.centers_content__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.centers_content__list li {
+    width: 100%;
+}
+
+.centers_content__list a {
+    display: flex;
+    width: 100%;
+    padding: 16px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-titles);
+    background-color: rgba(217, 217, 217, 0.35);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.centers_content__list a.active,
+.centers_content__list a:hover {
+    background-color: var(--color-green);
+    color: var(--color-light);
+}
+
+.centers_right__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.centers_content__right .doctor_tabs_item_card {
+    padding: 0;
+}
+
+@media screen and (max-width:1099.98px) {
+    .centers_right__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        place-content: center;
+    }
+}
+
+@media screen and (max-width:979.98px) {
+    .centers_content__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centers_hero,
+    .centers_content {
+        margin: 35px 0;
+    }
+    .centers_content__left{
+        width: 100%;
+    }
+    .centers_content__list li:has(a) {
+        display: none;
+    }
+
+    .centers_content__list li:has(a.active) {
+        display: flex;
+    }
+
+    .centers_content__list a.active {
+        padding: 20px;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .centers_hero__input {
+        width: 80%;
+        height: 70px;
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+    .centers_hero__title {
+        max-width: 410px;
+    }
+
+    .centers_hero__btn.btn_pink {
+        width: 20%;
+        height: 70px;
+        padding: 10px 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .centers_hero__btn {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--color-titles);
+        background: rgba(217, 217, 217, 0.35);
+        padding: 20px;
+    }
+
+    .centers_hero__btn.blog_hero__btn {
+        width: 100%;
+    }
+
+    .canters_mobile .blog_hero__items__mobile .blog_hero_item.active {
+        background-color: var(--color-green);
+    }
+}
+
+@media screen and (max-width: 764.98px) {
+    .centers_right__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .centers_hero__seatch {
+        margin-top: 25px;
+    }
+
+    .centers_right__wrapper .doctor_tabs_items_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .centers_hero,
+    .centers_content {
+        margin: 25px 0;
+    }
+
+    .centers_hero__input {
+        width: 100%;
+        height: 60px;
+        padding: 10px 15px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .centers_hero__btn.btn_pink {
+        display: none;
+    }
+    .centers_content__wrapper{
+        gap: 10px;
+    }
+    .centers_content__list a.active,
+    .centers_hero__btn.blog_hero__btn{
+        font-size: 18px;
+        line-height: 21px;
+        padding: 13px;
+    }
+    .centers_content__right{
+        margin-top: 30px;
+    }
+}
+
+/* Centers Content END */

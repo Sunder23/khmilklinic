@@ -1,0 +1,202 @@
+section.section_slider {
+    margin: 20px 0 60px;
+}
+.section_slider_swiper .swiper-slide {
+    min-height: 500px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.section_slider_swiper .swiper-slide.text_place_right{
+	justify-content: end;
+    text-align: right;
+}
+.section_slider_swiper .swiper-slide.text_place_right .section_slider_card{
+	align-items: flex-end;	
+}
+.section_slider_card_mobile {
+    background-position: -500% -500%;
+    background-repeat: no-repeat;
+}
+
+.section_slider_card {
+    padding: 20px 0;
+/*     max-width: 530px; */
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--color-light);
+}
+
+.section_slider_card.dark {
+    color: #0A0B06;
+}
+
+.section_slider_card_subtitle {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+}
+
+.section_slider_card_title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+}
+
+.section_slider_card_text {
+    max-width: 403px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.section_slider_card_text ul {
+    padding-left: 20px;
+    list-style: disc;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--color-light);
+    text-transform: capitalize;
+}
+
+
+
+.section_slider_swiper:hover .global_slider_arrows {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.global_slider_arrows-prev {
+    transform: scale(-1);
+}
+
+.global_slider_arrows_container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.section_slider_pagination {
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section_slider_pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background-color: #D9D9D9;
+    opacity: 1;
+}
+
+.section_slider_pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-pink);
+    width: 35px;
+}
+
+
+@media screen and (max-width:979.98px) {
+    section.section_slider {
+        margin: 0 0 50px 0;
+    }
+
+    section .section_slider__container {
+        padding: 0;
+    }
+
+    .section_slider_swiper .swiper-slide {
+        min-height: 335px;
+    }
+
+    .section_slider_card_title {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .section_slider_card_text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:765.98px) {
+    section.section_slider {
+        margin: 0 0 40px 0;
+    }
+
+    .section_slider_swiper .swiper-slide {
+        min-height: 546px;
+        background-image: none !important;
+    }
+
+    .section_slider_card_mobile {
+        display: flex;
+        width: 100%;
+        min-height: 546px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section_slider_card {
+        padding: 40px 0;
+        margin: 0 15px;
+        justify-content: start;
+		width: 100%;
+    }
+
+    /* .section_slider_card_btn {
+        margin-top: auto;
+        margin-bottom: 40px;
+    } */
+
+    .section_slider .section_slider_pagination {
+        position: absolute;
+        z-index: 200;
+        bottom: 40px;
+        padding: 0;
+    }
+
+    .section_slider_card_subtitle {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .section_slider_card_title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .section_slider_card_text {
+        font-size: 15px;
+        line-height: 130%;
+    }
+	.btn_pink.section_slider_card_btn{
+		margin: auto 0 30px;
+	}
+}

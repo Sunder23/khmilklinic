@@ -1,0 +1,462 @@
+/* Section Team Hero */
+section .team_hero__container {
+    max-width: 1065px;
+}
+
+.team_hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.team_hero__top {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .team_hero__title {
+}
+.title_h2 {
+} */
+.team_hero__content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team_hero__content>picture {
+    display: flex;
+}
+
+.team_hero__content>picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-position: left top;
+    object-fit: cover;
+    height: 100%;
+}
+
+.team_hero__right {
+    position: relative;
+    max-width: 460px;
+    padding: 138px 58px;
+    background: #F997C2;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.team_hero__bottom {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+}
+
+.team_hero__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-text);
+}
+
+.team_hero__list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team_hero__list_item {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-left: 4px solid #79B833;
+}
+
+.team_hero__list_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-green);
+    text-transform: uppercase;
+}
+
+.team_hero__list_content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--color-text);
+}
+
+/* Section Team Hero END */
+
+/* Section Team Doctors */
+
+.team_doctors__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.team_doctors__items {
+    max-width: 975px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 15px;
+    place-content: center;
+}
+
+.team_doctors__item {
+    display: flex;
+    flex-direction: column;
+    padding: 33px 16px 10px;
+    background: rgba(121, 184, 51, 0.8);
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.team_doctors__num {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.team_doctors__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Section Team Doctors END */
+
+/* Section Team CTA */
+.team_cta{
+    overflow: hidden;
+}
+
+.team_cta__wrapper {
+    position: relative;
+    padding: 40px 40px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(241, 159, 195, 0.2) 0%, rgba(241, 159, 195, 0.18) 100%);
+    box-shadow: 0px 0px 30px rgba(121, 184, 51, 0.08);
+    gap: 40px;
+}
+.team_cta__slider{
+    position: relative;
+    width: auto;
+}
+.team_cta__slider::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 34px;
+    height: 34px;
+    background: #F19FC3;
+    z-index: 20;
+}
+
+.team_cta__form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.team_cta__title {
+    margin-bottom: 20px;
+}
+
+.team_cta__swiper {
+    max-width: 530px;
+}
+
+.team_cta__form input:not(input[type='submit']),
+.team_cta__form select {
+    margin-top: 0 !important;
+    display: flex !important;
+    width: 100% !important;
+    padding: 5px 15px 15px 0px;
+    border: 0;
+    border-bottom: 1px solid #282828 !important;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    background-color: transparent;
+}
+
+.team_cta__form input::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.team_cta_btn.btn_pink {
+    padding: 16px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+
+/* Section Team CTA END */
+
+/* Section Services */
+
+.team_servives__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.team_servives__title.title_h2 {
+    text-align: left;
+}
+
+.team_servives__row {
+    margin-top: 40px;
+    width: 100%;
+}
+.team_servives__row_desctop{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 32%);
+    gap: 20px;
+    justify-content: space-between;
+}
+.team_servives__row_tablet,
+.team_servives__row_mobile{
+    display: none;
+}
+.team_servives__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.team_servives__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-text);
+    text-transform: capitalize;
+}
+
+.team_servives__item svg {
+    width: 11px;
+    height: 11px;
+}
+
+.team_servives__item svg path {
+    fill: var(--color-text);
+}
+
+.team_servives__item:hover {
+    background-color: #F19FC3;
+    border-bottom: 1px solid #F19FC3;
+    color: #fff;
+}
+
+.team_servives__item:hover svg path {
+    fill: #fff;
+}
+
+/* Section Services END */
+
+@media screen and (max-width: 979.98px) {
+    /* Section Team Hero */
+
+    .team_hero__content {
+        margin-top: 50px;
+    }
+
+    .team_hero__right {
+        padding: 76px 16px;
+    }
+
+    /* Section Team Hero END*/
+
+    /* Section Team Doctors */
+    .team_doctors__items {
+        max-width: 510px;
+        grid-gap: 25px;
+    }
+
+    /* Section Team Doctors END */
+    /* Clinics section Team  */
+    .section_clinics__team .section_clinics_title{
+        text-align: left;
+    }
+    /* Clinics section Team END */
+    /* Section Team CTA */
+    section .team_cta__container{
+        padding: 0;
+    }
+    .team_cta__wrapper{
+        padding: 40px 20px 50px;
+        align-items: flex-start;
+    }
+    .team_cta__wrapper::before{
+        top: 25px;
+        right: 0;
+    }
+    .team_cta__title.title_h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .team_cta__form{
+        padding-top: 10px;
+    }
+    .team_cta_btn.btn_pink{
+        margin-top: 10px;
+    }
+
+    .team_cta__swiper {
+        max-width: 355px;
+    }
+
+    .team_cta__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .team_cta__card{
+        height: 338px;
+        width: 356px;
+    }
+    .team_cta__card img{
+        object-fit: cover;
+        height: 100%;
+    }
+    /* Section Team CTA END*/
+    /* Section Services  */
+    .team_servives__row_desctop{
+        display: none;
+    }
+    .team_servives__row_tablet{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 48.6%);
+        gap: 20px;
+    }
+     /* Section Services END  */
+}
+
+@media screen and (max-width: 764.98px) {
+
+    /* Section Team Hero */
+    section .team_hero__container {
+        padding: 0;
+    }
+
+    .team_hero__wrapper {
+        gap: 30px;
+    }
+
+    .team_hero__content {
+        flex-direction: column;
+    }
+
+    .team_hero__content>picture img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team_hero__right {
+        max-width: 100%;
+        padding: 45px 25px;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .team_hero__bottom {
+        max-width: 90%;
+    }
+
+    .team_hero__list {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .team_hero__list_title {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .team_hero__list_content {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    /* Section Team Hero END*/
+
+    /* Section Team Doctors */
+    .team_doctors__wrapper {
+        gap: 30px;
+    }
+
+    /* Section Team Doctors END */
+    /* Section Team CTA */
+    .team_cta__wrapper{
+        padding: 40px 10px;
+        flex-direction: column;
+        gap: 0;
+    }
+    .team_cta__form [role='form']{
+        width: 100%;
+    }
+    .team_cta__slider{
+        width: 100%;
+    }
+    .team_cta__swiper{
+        max-width: 100%;
+    }
+    .team_cta__card{
+        height: auto;
+        width: 100%;
+    }
+    .team_cta__card img{
+        height: auto;
+    }
+    .team_cta__slider::before{
+        right: -10px;
+    }
+    /* Section Team CTA END */
+    /* Section Services  */
+    .team_servives__row_tablet{
+        display: none;
+    }
+    .team_servives__row_mobile{
+        display: block;
+    }
+     /* Section Services END  */
+}
